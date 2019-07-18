@@ -11,3 +11,4 @@ language-model/MarathiWikipediaArticles/*
 tokenizer/.ipynb_checkpoints/*
 tokenizer/marathi_lm.model
 tokenizer/marathi_lm.vocab
+.idea/workspace.xml
