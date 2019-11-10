@@ -1,0 +1,13 @@
+{
+  "embeddings": [
+    {
+      "tensorName": "Marathi Sentence Encodings",
+      "tensorShape": [
+        9,
+        400
+      ],
+      "tensorPath": "https://media.githubusercontent.com/media/goru001/nlp-for-marathi/master/language-model/sentence_encodings/inltk_sentence_encoding_mr.tsv",
+      "metadataPath": "https://media.githubusercontent.com/media/goru001/nlp-for-marathi/master/language-model/sentence_encodings/inltk_sentence_encoding_metadata_mr.tsv"
+    }
+  ]
+}
