@@ -1,29 +1,54 @@
 # NLP for Marathi
 
-This repository contains State of the Art Tokenizer, Language model
+This repository contains State of the Art Language models
  and Classifier for Marathi, which is spoken predominantly by
   Marathi people of Maharashtra, India.
+  
+The models trained here have been used in [Natural Language Toolkit for Indic Languages
+ (iNLTK)](https://github.com/goru001/inltk)
+ 
 
 ## Dataset
 
-* Download [Marathi Wikipedia Articles Dataset](https://drive.google.com/open?id=1YA49yoymRKKsJiSllCJIc7SV29BTVNe9) (85,537 articles) which I scraped, cleaned and
-used to train the language model
+#### Created as part of this project
+1. [Marathi Wikipedia Articles](https://www.kaggle.com/disisbig/marathi-wikipedia-articles)
 
-* Download [Marathi News classification Dataset](https://drive.google.com/open?id=1sssR43ao9UV_lDBdHff01Wh6ASM2XVUX) which I scraped and used to train 
-the classifier
+2. [Marathi News Dataset](https://www.kaggle.com/disisbig/marathi-news-dataset)
 
 ## Results
 
-#### Language Model
+#### Language Model Perplexity
 
-`on 30% validation set`
+| Architecture/Dataset | Marathi Wikipedia Articles |
+|:--------:|:----:|
+|   ULMFiT  |  18  |
+|  TransformerXL |  17.42  |
 
-* Perplexity of language model: ~18
 
-#### Classifier
+#### Classification Metrics
 
-* Accuracy of classification model: ~91%
-* Kappa score of classification model: ~84
+##### ULMFiT
+
+| Dataset | Accuracy | Kappa Score |
+|:--------:|:----:|:----:|
+| Marathi News Dataset |  93.55  |  87.50  |
+
+
+#### Visualizations
+ 
+##### Embedding Space
+
+| Architecture | Visualization |
+|:--------:|:----:|
+| ULMFiT | [Embeddings projection](https://projector.tensorflow.org/?config=https://raw.githubusercontent.com/goru001/nlp-for-marathi/master/language-model/embedding_projector_config.json) |
+| TransformerXL | [Embeddings projection](https://projector.tensorflow.org/?config=https://raw.githubusercontent.com/goru001/nlp-for-marathi/master/language-model/embedding_projector_transformer_config.json)  |
+
+##### Sentence Encodings
+
+| Architecture | Visualization |
+|:--------:|:----:|
+| ULMFiT | [Encodings projection](https://projector.tensorflow.org/?config=https://raw.githubusercontent.com/goru001/nlp-for-marathi/master/language-model/sentence_encodings/encoding_projector_config.json) |
+
 
 ## Pretrained Language Model
 

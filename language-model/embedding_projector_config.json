@@ -1,7 +1,7 @@
 {
   "embeddings": [
     {
-      "tensorName": "Marathi Embedding Vectors",
+      "tensorName": "Marathi Embedding Vectors - ULMFiT",
       "tensorShape": [
         30000,
         400
